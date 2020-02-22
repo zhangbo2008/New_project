@@ -11,7 +11,7 @@ https://cloud.tencent.com/act/pro/AI?fromSource=gwzcw.3177853.3177853.3177853&ut
 '''
 
 
-
+##
 
 
 # 超参数
@@ -2450,7 +2450,8 @@ import numpy
 
 im = cv2.imread('tmp.jpg')
 
-
+'''
+这个部分是画框看着,比较的.实际代码不用跑哦的.
 t232=tmp[0]
 for i in t232:
 
@@ -2493,6 +2494,7 @@ t232=tmp[-6]
 for i in t232:
 
   cv2.rectangle(im, (data[i]['Polygon'][0]['X'], data[i]['Polygon'][0]['Y']), (data[i]['Polygon'][2]['X'], data[i]['Polygon'][2]['Y']), (200,0,200), 5)
+'''
 
 
 
@@ -2502,18 +2504,104 @@ for i in t232:
 
 
 #看看聚类的效果
+
+
+
+
+
+
+
+
+'''
+下面进行剔除那些图片中的文字.
+
+继续操作tmp
+
+'''
+
+
+# 当一个门派里面的字符太少的时候就删除这个门派!
+
+
+
+menpaistr=''
+savetmp=[]
+for i in tmp:
+  menpaistr = ''
+  for j in i:
+    menpaistr+=data[j]['DetectedText']
+
+  print(menpaistr)
+  print(3)
+
+  if len(menpaistr)>50:
+    savetmp.append(i)
+print(savetmp)
+
+'''
+下面在图片中删除这6块即可.
+
+当然想直接把里面各个图片抽出来,但是图片如果紧贴文档的边缘,那么就不好知道应该切的范围了.
+'''
+
+# 找到能把门派全包含的矩形.
+
+
+
+##
+for tmp in savetmp:
+
+  xmin,xmax,ymin,ymax=9999,0,9999,0
+  for i in tmp:
+    a=data[i]['Polygon']
+    for j in range(4):
+       xmin=min(xmin,a[j]['X'])
+       ymin=min(ymin,a[j]['Y'])
+       xmax=max(xmax,a[j]['X'])
+       ymax=max(ymax,a[j]['Y'])
+  #稍微括一点,因为腾讯ocr框不准.
+  xmin-=zigao*0.1
+  ymin-=zigao*0.1
+  xmax+=zigao*0.1
+  ymax+=zigao*0.1
+  xmin=int(xmin)
+  ymin=int(ymin)
+  xmax=int(xmax)
+  ymax=int(ymax)
+
+  cv2.rectangle(im,(xmin,ymin),(xmax,ymax),(255,255,255),-1)#-1表示的是填充矩形的意思
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 cv2.imwrite("new.png",im)
-
-
-
-
-
-
-
-'''
-下面进行抠图.
-'''
-
-
 
 
