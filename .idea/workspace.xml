@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="535c4ba2-4e35-4115-a70c-6349e41fec7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/888.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/new 1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/77676.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingcha.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/888.py" beforeDir="false" afterPath="$PROJECT_DIR$/888.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +35,36 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\PycharmProjects\New_project" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.888">
+    <configuration name="77676" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="New_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/77676.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="888" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="New_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -65,9 +87,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="bingcha" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="New_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Administrator\PycharmProjects\New_project\bingcha.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.888" />
+        <item itemvalue="Python.77676" />
+        <item itemvalue="Python.bingcha" />
       </list>
     </recent_temporary>
   </component>
@@ -81,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582338968735</updated>
-      <workItem from="1582338971398" duration="330000" />
+      <workItem from="1582338971398" duration="23519000" />
     </task>
     <servers />
   </component>
@@ -93,24 +139,62 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="358" y="0" key="#888/0.0.1280.680@0.0.1280.680" timestamp="1582339234988" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1582339308431">
+    <state width="1237" height="203" key="GridCell.Tab.0.bottom" timestamp="1582366944633">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582339308431" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1582339308430">
+    <state width="1237" height="203" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582366944633" />
+    <state width="1237" height="203" key="GridCell.Tab.0.center" timestamp="1582366944633">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582339308430" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1582339308429">
+    <state width="1237" height="203" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582366944633" />
+    <state width="1237" height="203" key="GridCell.Tab.0.left" timestamp="1582366944632">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582339308429" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1582339308430">
+    <state width="1237" height="203" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582366944632" />
+    <state width="1237" height="203" key="GridCell.Tab.0.right" timestamp="1582366944633">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582339308430" />
+    <state width="1237" height="203" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582366944633" />
+    <state width="1237" height="491" key="GridCell.Tab.1.bottom" timestamp="1582366676188">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="491" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582366676188" />
+    <state width="1237" height="491" key="GridCell.Tab.1.center" timestamp="1582366676188">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="491" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1582366676188" />
+    <state width="1237" height="491" key="GridCell.Tab.1.left" timestamp="1582366676188">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="491" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1582366676188" />
+    <state width="1237" height="491" key="GridCell.Tab.1.right" timestamp="1582366676188">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="491" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1582366676188" />
+    <state x="197" y="80" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1582363278891">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="197" y="80" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680@0.0.1280.680" timestamp="1582363278891" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/888.py</url>
+          <line>2424</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="panding(tmp1,tmp2)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/New_project$888.coverage" NAME="888 Coverage Results" MODIFIED="1582339308410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/New_project$56565.coverage" NAME="56565 Coverage Results" MODIFIED="1582354462384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/New_project$77676.coverage" NAME="77676 Coverage Results" MODIFIED="1582366148227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/New_project$888.coverage" NAME="888 Coverage Results" MODIFIED="1582366944622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
