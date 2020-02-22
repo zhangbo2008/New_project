@@ -2534,7 +2534,7 @@ for i in tmp:
   print(menpaistr)
   print(3)
 
-  if len(menpaistr)>50:
+  if len(menpaistr)>50 and menpaistr[:6]!="Figure":
     savetmp.append(i)
 print(savetmp)
 
