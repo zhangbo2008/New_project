@@ -1923,6 +1923,27 @@ for i in range(len(data)):
         jilu666.append((i,j))
 
 
+def checkBoxtonghang(i,j):
+  tmp1 = data[i]['Polygon']
+  tmp2 = data[j]['Polygon']
+
+  y2 = (tmp1[2]['Y'] + tmp1[3]['Y']) / 2
+  y1 = (tmp1[1]['Y'] + tmp1[0]['Y']) / 2
+  ypingjun1 = ((y2 + y1) / 2)
+
+  y2 = (tmp2[2]['Y'] + tmp2[3]['Y']) / 2
+  y1 = (tmp2[1]['Y'] + tmp2[0]['Y']) / 2
+  ypingjun2 = ((y2 + y1) / 2)
+
+  tmp = []
+  if ypingjun1 - ypingjun2 > -zigao * rate and ypingjun1 - ypingjun2 < zigao * rate:
+        return True
+  return False
+
+
+
+
+
 
 
 print("处理前间隔表",jiange)
@@ -2076,6 +2097,22 @@ menpaistr=''
 savetmp=[]
 for i in tmp:
   menpaistr = ''
+
+  # 目前想到的方法是对当前门派里面box, 找最左边2个box,他们起始文字是figure,那么就不要这个门派.
+  tmp888 = []
+  for j in i:
+
+
+     tmp888.append((data[j]['Polygon'][0]['X'],j))
+     # paixu
+  tmp888=sorted(tmp888,key=lambda x:x[0])
+  # print(tmp888,99999999999999999)
+
+
+
+
+
+
   for j in i:
     menpaistr+=data[j]['DetectedText']
 
@@ -2087,8 +2124,82 @@ for i in tmp:
 
     # 目前想到的方法是对当前门派里面box, 找最左边2个box,他们起始文字是figure,那么就不要这个门派.
     savetmp.append(i)
-print(savetmp)
 
+
+
+
+savetmp2=[]
+for i in savetmp:
+
+
+  # 目前想到的方法是对当前门派里面box, 找最左边2个box,他们起始文字是figure,那么就不要这个门派.
+  tmp888 = []
+  for j in i:
+
+
+     tmp888.append((data[j]['Polygon'][0]['X'],j))
+     # paixu
+  tmp888=sorted(tmp888,key=lambda x:x[0])
+  # print(tmp888,99999999999999999)
+
+
+
+
+  def check(tmp888):
+        if len(tmp888) == 2:
+
+          if data[tmp888[0][1]]['DetectedText'][:6] != "Figure" and data[tmp888[1][1]]['DetectedText'][:6] != "Figure":
+            return True        # 表示是一个好的段落.
+        if len(tmp888) < 2:
+          if data[tmp888[0][1]]['DetectedText'][:6] != "Figure":
+            return True
+
+
+        # 如果是注释,那么他一定会在前几个字符上写上Figure,并且是一行的头.
+    # 也就是与带figure同行的没有比他x坐标小的.
+        def check2(biaohao,tmp888):
+          genbiaohaotonghangde=[]
+          for j in tmp888:
+            biaohao2=j[1]
+            if checkBoxtonghang(biaohao,biaohao2):
+              genbiaohaotonghangde.append(biaohao2)
+          hang = []
+          for biaohao2 in genbiaohaotonghangde:
+            if biaohao==biaohao2:
+              continue
+
+            hang.append(data[biaohao2]['Polygon'][0]['X'])
+          if hang!=[]:
+           minhang=min(hang)
+          else:
+            minhang=99999
+
+
+
+          if  data[biaohao]['Polygon'][0]['X']<minhang:
+                 return False  # 说明bu是门派
+          return True
+
+
+
+
+        for i in tmp888:
+          biaohao=i[1]
+          if data[biaohao]['DetectedText'][:6]=="Figure":
+            if check2(biaohao,tmp888)==False:
+              return False
+
+        return True
+
+
+
+  if check(tmp888):
+    savetmp2.append(i)
+
+
+
+print(savetmp2,9999999999999999)
+savetmp=savetmp2
 
 
 im = cv2.imread('test2.jpg')
@@ -2096,12 +2207,12 @@ print("处理之后的切片,分块信息")
 print("段落细节",savetmp)
 print("段落总数",len(savetmp))
 print(duanluojiange,"段落间隔值")
-for i in savetmp[2]:
+for i in savetmp[0]:
 
   cv2.rectangle(im, (data[i]['Polygon'][0]['X'], data[i]['Polygon'][0]['Y']), (data[i]['Polygon'][2]['X'], data[i]['Polygon'][2]['Y']), (1,1,1), 5)
 
 cv2.imwrite("88888.png",im)
-raise
+
 
 
 
