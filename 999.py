@@ -19,11 +19,7 @@ https://cloud.tencent.com/act/pro/AI?fromSource=gwzcw.3177853.3177853.3177853&ut
 
 jingdu=0.2
 jiangexishu=0.5
-
-
-
-#下面是解析后的大字典.
-
+tupiandizhi='test2.jpg'               # 这个是图片地址
 shuru={
   "TextDetections": [
     {
@@ -1823,7 +1819,21 @@ shuru={
   ],
   "Language": "zh",
   "RequestId": "c47aa95e-ed61-4aac-98e0-118414fd2c4e"
-}
+}                    #这个是图片的ocr结果.
+
+
+
+
+
+
+
+
+
+
+
+#下面是解析后的大字典.
+
+
 
 data=shuru["TextDetections"]
 
@@ -2158,27 +2168,41 @@ for i in savetmp:
         # 如果是注释,那么他一定会在前几个字符上写上Figure,并且是一行的头.
     # 也就是与带figure同行的没有比他x坐标小的.
         def check2(biaohao,tmp888):
-          genbiaohaotonghangde=[]
-          for j in tmp888:
-            biaohao2=j[1]
-            if checkBoxtonghang(biaohao,biaohao2):
-              genbiaohaotonghangde.append(biaohao2)
-          hang = []
-          for biaohao2 in genbiaohaotonghangde:
-            if biaohao==biaohao2:
-              continue
+            genbiaohaotonghangde=[]
+            for j in tmp888:
+              biaohao2=j[1]
+              if checkBoxtonghang(biaohao,biaohao2):
+                genbiaohaotonghangde.append(biaohao2)
+            hang = []
+            for biaohao2 in genbiaohaotonghangde:
+              if biaohao==biaohao2:
+                continue
 
-            hang.append(data[biaohao2]['Polygon'][0]['X'])
-          if hang!=[]:
-           minhang=min(hang)
-          else:
-            minhang=99999
+              hang.append(data[biaohao2]['Polygon'][0]['X'])
+            if hang!=[]:
+             minhang=min(hang)
+            else:
+              minhang=99999
 
 
 
-          if  data[biaohao]['Polygon'][0]['X']<minhang:
-                 return False  # 说明bu是门派
-          return True
+            if  data[biaohao]['Polygon'][0]['X']<minhang:
+              tmp34=[]
+              biaohaolie=data[biaohao]['Polygon'][0]['Y']
+              for j in tmp888:
+                liebiao=data[j[1]]['Polygon'][0]['Y']
+                if liebiao<biaohaolie:
+                  tmp34.append(j[1])
+              wenben=''
+              for i in tmp34:
+                wenben+=data[i]['DetectedText']
+              if len(wenben)<50:
+
+                   #  看 biaohao上面的文字有多少.
+                   return False  # 说明bu是门派
+
+            # 看figure上面的文本有多少.
+            return True
 
 
 
@@ -2188,6 +2212,17 @@ for i in savetmp:
           if data[biaohao]['DetectedText'][:6]=="Figure":
             if check2(biaohao,tmp888)==False:
               return False
+
+
+
+
+
+
+
+
+
+
+
 
         return True
 
@@ -2202,7 +2237,7 @@ print(savetmp2,9999999999999999)
 savetmp=savetmp2
 
 
-im = cv2.imread('test2.jpg')
+im = cv2.imread(tupiandizhi)
 print("处理之后的切片,分块信息")
 print("段落细节",savetmp)
 print("段落总数",len(savetmp))
