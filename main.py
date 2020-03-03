@@ -2526,12 +2526,10 @@ for ii in range(len(save_xianduan)):
      for i in range(len(hengqie)-1):
            shang=hengqie[i]
            xia=hengqie[i+1]
-
            tmp999=im[shang:xia,save_xianduan[ii][0]:save_xianduan[ii][1],:]
 
-           # if (tmp999==255).all():
-           #   continue
-
+           if (tmp999==255.).all():
+             continue
            cv2.imwrite("outputPic2/new"+str(indexGlobalUnic)+".png",
              tmp999)
            indexGlobalUnic+=1
