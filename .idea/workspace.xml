@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="535c4ba2-4e35-4115-a70c-6349e41fec7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/999.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5545454.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
       <recent name="C:\Users\Administrator\PycharmProjects\New_project" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.main (1)">
     <configuration name="44" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="New_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -64,7 +65,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="568" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="5545454" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="New_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -77,7 +78,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/568.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/5545454.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -108,7 +109,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="888" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="New_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -121,7 +122,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/888.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.5545454" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.44" />
         <item itemvalue="Python.88" />
-        <item itemvalue="Python.568" />
-        <item itemvalue="Python.888" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +175,8 @@
       <updated>1582338968735</updated>
       <workItem from="1582338971398" duration="23519000" />
       <workItem from="1582368720477" duration="4682000" />
-      <workItem from="1582424066579" duration="12312000" />
+      <workItem from="1582424066579" duration="12370000" />
+      <workItem from="1583222181722" duration="10791000" />
     </task>
     <servers />
   </component>
@@ -194,38 +196,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="470" y="65" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog/0.0.1280.680@0.0.1280.680" timestamp="1582373489235" />
-    <state width="1237" height="165" key="GridCell.Tab.0.bottom" timestamp="1582437505002">
+    <state width="1237" height="256" key="GridCell.Tab.0.bottom" timestamp="1583236804573">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="165" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582437505002" />
-    <state width="1237" height="165" key="GridCell.Tab.0.center" timestamp="1582437505002">
+    <state width="1237" height="256" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583236804573" />
+    <state width="1237" height="256" key="GridCell.Tab.0.center" timestamp="1583236804573">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="165" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582437505002" />
-    <state width="1237" height="165" key="GridCell.Tab.0.left" timestamp="1582437505002">
+    <state width="1237" height="256" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583236804573" />
+    <state width="1237" height="256" key="GridCell.Tab.0.left" timestamp="1583236804573">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="165" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582437505002" />
-    <state width="1237" height="165" key="GridCell.Tab.0.right" timestamp="1582437505002">
+    <state width="1237" height="256" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583236804573" />
+    <state width="1237" height="256" key="GridCell.Tab.0.right" timestamp="1583236804573">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="165" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582437505002" />
-    <state width="1237" height="283" key="GridCell.Tab.1.bottom" timestamp="1582433813796">
+    <state width="1237" height="256" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583236804573" />
+    <state width="1237" height="262" key="GridCell.Tab.1.bottom" timestamp="1583236791729">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="283" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582433813796" />
-    <state width="1237" height="283" key="GridCell.Tab.1.center" timestamp="1582433813796">
+    <state width="1237" height="262" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583236791729" />
+    <state width="1237" height="262" key="GridCell.Tab.1.center" timestamp="1583236791729">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="283" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1582433813796" />
-    <state width="1237" height="283" key="GridCell.Tab.1.left" timestamp="1582433813796">
+    <state width="1237" height="262" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583236791729" />
+    <state width="1237" height="262" key="GridCell.Tab.1.left" timestamp="1583236791729">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="283" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1582433813796" />
-    <state width="1237" height="283" key="GridCell.Tab.1.right" timestamp="1582433813796">
+    <state width="1237" height="262" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583236791729" />
+    <state width="1237" height="262" key="GridCell.Tab.1.right" timestamp="1583236791729">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="283" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1582433813796" />
+    <state width="1237" height="262" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583236791729" />
     <state x="144" y="0" key="SettingsEditor" timestamp="1582373490413">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -240,13 +242,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>2248</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>2230</line>
-          <option name="timeStamp" value="7" />
+          <line>2446</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -260,6 +257,12 @@
         <watch expression="savetmp2" />
         <watch expression="check(tmp888)" />
         <watch expression="biaohao" />
+        <watch expression="im" />
+        <watch expression="baitiao" />
+        <watch expression="qiege" />
+        <watch expression="i" />
+        <watch expression="im[:,save_xianduan[i][0]:save_xianduan[i][1],:] " />
+        <watch expression="&quot;new&quot;+str(i)+&quot;.png&quot;" />
       </configuration>
     </watches-manager>
   </component>
@@ -268,8 +271,11 @@
     <SUITE FILE_PATH="coverage/New_project$999.coverage" NAME="999 Coverage Results" MODIFIED="1582437483207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/New_project$44.coverage" NAME="44 Coverage Results" MODIFIED="1582434514028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/New_project$56565.coverage" NAME="56565 Coverage Results" MODIFIED="1582354462384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/New_project$main.coverage" NAME="main Coverage Results" MODIFIED="1583236552591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/New_project$77676.coverage" NAME="77676 Coverage Results" MODIFIED="1582366148227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/New_project$88.coverage" NAME="88 Coverage Results" MODIFIED="1582434306477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/New_project$888.coverage" NAME="888 Coverage Results" MODIFIED="1582372352206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/New_project$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1583236791717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/New_project$5545454.coverage" NAME="5545454 Coverage Results" MODIFIED="1583236603365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

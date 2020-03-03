@@ -2319,8 +2319,144 @@ for tmp in savetmp:
 
 
 
-
-
+print("分割前的图片",tupiandizhi)
+print("分割后的图片在new.png")
 cv2.imwrite("new.png",im)
+
+
+
+
+
+print("下面进行水平和竖直切割")
+print("打算用段落间隔这个参数来切分")
+
+
+
+
+print(duanluojiange)
+
+
+# 下面进行像素级别的遍历即可. 继续处理im这个图片
+
+
+import numpy as np
+im=np.array(im)
+
+
+# 想法是用循环来找一个数值的白条,让这个白条的左右都有字符,这个白条的宽度是duanluojiange
+# 高度是图片高
+
+duanluojiange=int(duanluojiange)
+def check999(im):
+    save=[]
+    for i in range(im.shape[1]):
+      #先做一个白条,用4个点来表示.
+       # 表示白条左上角距离im左上角的距离. 为了跟opencv一致,我们把图片看作一个大矩阵.
+      # baitiao里面点的坐标表示矩阵的索引.
+      baitiao=[(0,i),(0,i+duanluojiange),(im.shape[0],i),(im.shape[0],i+duanluojiange)]
+
+
+      # 找到一个白条跟图片信息都不相交.
+      # 只需要对图片中i,i+duanluojiange 进行数值切割即可.
+
+      qiege=im[:,i:i+duanluojiange,:]
+
+      if (qiege==255).all():
+             save.append(i)
+
+
+
+    return save
+
+
+
+
+
+out=check999(im)
+
+
+
+
+
+
+
+print(2312321312312)
+
+
+# 去掉头尾连续in
+
+head=0
+end=im.shape[1]-1
+print(999999999999,end)
+while  head in out:
+  head+=1
+
+head-=1
+head=max(0,head)
+while  end in out:
+  end-=1
+end+=1
+end=min(im.shape[1],end)
+
+print(head,end)
+
+print(out)
+
+
+out4=[]
+for i in out:
+  if i<=head:
+    continue
+  if i>=end:
+    continue
+  out4.append(i)
+print("           ")
+print(out4)
+
+a=set(range(im.shape[1]))
+
+
+for i in out4:
+  a-=set(range(i,i+duanluojiange))
+
+
+a=list(a)
+print(a)
+
+# 再把a分成连续的线段.
+save_xianduan=[]
+
+# 直接根据特征找边缘点即可.
+for i in a:
+  if i-1 not in a:
+    left=i
+  if i+1 not in a:
+    right=i
+    save_xianduan.append((left,right))
+print(save_xianduan)
+
+import os
+if os.path.exists('outputPic'):
+  pass
+else:
+  os.mkdir('outputPic')
+
+print("把竖直切分的结果都放outputPic里面")
+
+for i in range(len(save_xianduan)):
+  cv2.imwrite("outputPic/new"+str(i)+".png", im[:,save_xianduan[i][0]:save_xianduan[i][1],:]   )
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
