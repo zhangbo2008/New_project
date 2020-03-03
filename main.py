@@ -2528,8 +2528,24 @@ for ii in range(len(save_xianduan)):
            xia=hengqie[i+1]
            tmp999=im[shang:xia,save_xianduan[ii][0]:save_xianduan[ii][1],:]
 
-           if (tmp999==255.).all():
+           if (tmp999>=250.).all():
              continue
+
+
+
+          #
+           # if i ==1:
+           #   for uu in range(tmp999.shape[0]):
+           #     for oo in range(tmp999.shape[1]):
+           #       if tmp999[uu][oo][0] !=255:
+           #         print(uu,oo,"******",tmp999[uu][oo][0])
+
+
+
+
+
+
+
            cv2.imwrite("outputPic2/new"+str(indexGlobalUnic)+".png",
              tmp999)
            indexGlobalUnic+=1
