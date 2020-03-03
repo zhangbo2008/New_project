@@ -2090,6 +2090,7 @@ tmp=tmp.get_set()
 # 下面进行可视化,看聚类结果.
 
 
+##
 
 
 import cv2
@@ -2102,7 +2103,14 @@ import numpy
 # 当一个门派里面的字符太少的时候就删除这个门派!
 
 
+print(tmp,"看看去掉figure前的那些段落")
+tmpSaveOrigin=tmp
 
+
+
+
+
+##
 menpaistr=''
 savetmp=[]
 for i in tmp:
@@ -2137,7 +2145,7 @@ for i in tmp:
 
 
 
-
+saveForFigure=[]
 savetmp2=[]
 for i in savetmp:
 
@@ -2167,6 +2175,7 @@ for i in savetmp:
 
         # 如果是注释,那么他一定会在前几个字符上写上Figure,并且是一行的头.
     # 也就是与带figure同行的没有比他x坐标小的.
+        # 判断是否是一个号门牌,好门派就返回True
         def check2(biaohao,tmp888):
             genbiaohaotonghangde=[]
             for j in tmp888:
@@ -2185,7 +2194,7 @@ for i in savetmp:
               minhang=99999
 
 
-
+# 如果figure 是打头写的.
             if  data[biaohao]['Polygon'][0]['X']<minhang:
               tmp34=[]
               biaohaolie=data[biaohao]['Polygon'][0]['Y']
@@ -2207,10 +2216,13 @@ for i in savetmp:
 
 
 
-        for i in tmp888:
-          biaohao=i[1]
+        for i in tmp888:  # tmp888是一个门派里面所有的box
+          biaohao=i[1]         # biaohao表示这个box在data中的索引
+
+          # 所有带figure的文字需要进行下面判断,是不是门派.
           if data[biaohao]['DetectedText'][:6]=="Figure":
             if check2(biaohao,tmp888)==False:
+              saveForFigure.append(biaohao)
               return False
 
 
@@ -2232,7 +2244,7 @@ for i in savetmp:
     savetmp2.append(i)
 
 
-
+print(saveForFigure,8888888888888888888888888888888)
 print(savetmp2,9999999999999999)
 savetmp=savetmp2
 
@@ -2270,7 +2282,7 @@ cv2.imwrite("88888.png",im)
 ##
 for tmp in savetmp:
 
-  xmin,xmax,ymin,ymax=9999,0,9999,0
+  xmin,xmax,ymin,ymax=99999,0,99999,0
   for i in tmp:
     a=data[i]['Polygon']
     for j in range(4):
@@ -2452,11 +2464,74 @@ for i in range(len(save_xianduan)):
 
 
 
+# 下面加入水平切割:          saveForFigure     tmpSaveOrigin
+saveForFigure=list(saveForFigure)
+WenziFigureMenpai=[]
+for i in tmpSaveOrigin:
+  for j in saveForFigure:
+    if j in i:
+        WenziFigureMenpai.append(i)
+print(WenziFigureMenpai) # 行分
+print(save_xianduan)  # 列分
+
+# 判断横线在那个save线段里面。
 
 
 
+'''
+怪不得一直感觉pycharm超卡，2000多行代码会让输入超卡，开启powersave模式即可！！！！！！！！！！
+'''
+
+qiedianForFinal=[]
+for ii in range(len(save_xianduan)):
+  liefen=save_xianduan[ii]
+  xmax=0
+  ymax=0
+  for i in WenziFigureMenpai:
+       xmax = 0
+       ymax = 0
+       # 返回第3个坐标点
+       for j in i:
+
+            tmp=data[j]['Polygon'][3]['X']
+            tmp2=data[j]['Polygon'][3]['Y']
+            xmax=max(xmax,tmp)
+            ymax=max(ymax,tmp2)
+
+       if xmax in range(liefen[0],liefen[1]):
+         qiedianForFinal.append((ii,xmax,ymax))
+
+print(qiedianForFinal,"qiefafinal")
 
 
+'''
+[(0, 655, 2451), (1, 1643, 1297), (1, 1718, 2430)] qiefafinal
+'''
+print(11111111)
 
 
+indexGlobalUnic=0
 
+for ii in range(len(save_xianduan)):
+     tmpqiefa=[]
+     for i in qiedianForFinal:
+       if i[0]==ii:
+         tmpqiefa.append(i)
+     hengqie=[k[2] for k in tmpqiefa]
+
+     # 补上切割首位       im.shape[1] 图片的宽      im.shape[0] 图片的高
+     hengqie=[0]+hengqie+[im.shape[0]]
+     print(hengqie)
+     # cv2.imwrite
+     for i in range(len(hengqie)-1):
+           shang=hengqie[i]
+           xia=hengqie[i+1]
+
+           tmp999=im[shang:xia,save_xianduan[ii][0]:save_xianduan[ii][1],:]
+
+           # if (tmp999==255).all():
+           #   continue
+
+           cv2.imwrite("outputPic2/new"+str(indexGlobalUnic)+".png",
+             tmp999)
+           indexGlobalUnic+=1

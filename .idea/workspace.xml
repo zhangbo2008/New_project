@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="535c4ba2-4e35-4115-a70c-6349e41fec7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/5545454.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/121212.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -10,6 +10,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,6 +57,28 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.main (1)">
+    <configuration name="121212" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="New_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/121212.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="44" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="New_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,28 +115,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/5545454.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="88" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="New_project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/88.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,10 +170,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.121212" />
         <item itemvalue="Python.5545454" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.44" />
-        <item itemvalue="Python.88" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +190,9 @@
       <workItem from="1582338971398" duration="23519000" />
       <workItem from="1582368720477" duration="4682000" />
       <workItem from="1582424066579" duration="12370000" />
-      <workItem from="1583222181722" duration="10791000" />
+      <workItem from="1583222181722" duration="11211000" />
+      <workItem from="1583241684463" duration="183000" />
+      <workItem from="1583243961380" duration="6513000" />
     </task>
     <servers />
   </component>
@@ -196,38 +212,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="470" y="65" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog/0.0.1280.680@0.0.1280.680" timestamp="1582373489235" />
-    <state width="1237" height="256" key="GridCell.Tab.0.bottom" timestamp="1583236804573">
+    <state width="1278" height="255" key="DebuggerActiveHint" timestamp="1583249416690">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="256" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583236804573" />
-    <state width="1237" height="256" key="GridCell.Tab.0.center" timestamp="1583236804573">
+    <state width="1278" height="255" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1583249416690" />
+    <state width="1237" height="182" key="GridCell.Tab.0.bottom" timestamp="1583250573320">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="256" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583236804573" />
-    <state width="1237" height="256" key="GridCell.Tab.0.left" timestamp="1583236804573">
+    <state width="1237" height="182" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583250573320" />
+    <state width="1237" height="182" key="GridCell.Tab.0.center" timestamp="1583250573319">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="256" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583236804573" />
-    <state width="1237" height="256" key="GridCell.Tab.0.right" timestamp="1583236804573">
+    <state width="1237" height="182" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583250573319" />
+    <state width="1237" height="182" key="GridCell.Tab.0.left" timestamp="1583250573319">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="256" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583236804573" />
-    <state width="1237" height="262" key="GridCell.Tab.1.bottom" timestamp="1583236791729">
+    <state width="1237" height="182" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583250573319" />
+    <state width="1237" height="182" key="GridCell.Tab.0.right" timestamp="1583250573319">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583236791729" />
-    <state width="1237" height="262" key="GridCell.Tab.1.center" timestamp="1583236791729">
+    <state width="1237" height="182" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583250573319" />
+    <state width="1237" height="221" key="GridCell.Tab.1.bottom" timestamp="1583250455892">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583236791729" />
-    <state width="1237" height="262" key="GridCell.Tab.1.left" timestamp="1583236791729">
+    <state width="1237" height="221" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583250455892" />
+    <state width="1237" height="221" key="GridCell.Tab.1.center" timestamp="1583250455892">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583236791729" />
-    <state width="1237" height="262" key="GridCell.Tab.1.right" timestamp="1583236791729">
+    <state width="1237" height="221" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583250455892" />
+    <state width="1237" height="221" key="GridCell.Tab.1.left" timestamp="1583250455892">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583236791729" />
+    <state width="1237" height="221" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583250455892" />
+    <state width="1237" height="221" key="GridCell.Tab.1.right" timestamp="1583250455892">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583250455892" />
     <state x="144" y="0" key="SettingsEditor" timestamp="1582373490413">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -242,8 +262,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>2446</line>
-          <option name="timeStamp" value="12" />
+          <line>2534</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -263,6 +283,11 @@
         <watch expression="i" />
         <watch expression="im[:,save_xianduan[i][0]:save_xianduan[i][1],:] " />
         <watch expression="&quot;new&quot;+str(i)+&quot;.png&quot;" />
+        <watch expression="save_xianduan" />
+        <watch expression="tmp999" />
+        <watch expression="(tmp999==255).all()" />
+        <watch expression="tmp999==255" />
+        <watch expression="(tmp999==255.).all()" />
       </configuration>
     </watches-manager>
   </component>
@@ -275,7 +300,8 @@
     <SUITE FILE_PATH="coverage/New_project$77676.coverage" NAME="77676 Coverage Results" MODIFIED="1582366148227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/New_project$88.coverage" NAME="88 Coverage Results" MODIFIED="1582434306477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/New_project$888.coverage" NAME="888 Coverage Results" MODIFIED="1582372352206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/New_project$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1583236791717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/New_project$121212.coverage" NAME="121212 Coverage Results" MODIFIED="1583249652280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/New_project$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1583250573312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/New_project$5545454.coverage" NAME="5545454 Coverage Results" MODIFIED="1583236603365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
